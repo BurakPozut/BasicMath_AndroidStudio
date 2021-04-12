@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timer_tw"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#4CAF50"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="30"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feed_backtw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="35sp"
+        android:textColor="@color/red"
+        app:layout_constraintRight_toRightOf="@id/question_tw"
+        app:layout_constraintLeft_toLeftOf="@id/question_tw"
+        app:layout_constraintTop_toBottomOf="@id/question_tw"
+        app:layout_constraintBottom_toTopOf="@id/Start_btn"/>
+
+    <TextView
+        android:id="@+id/counter_tw"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#3F51B5"
+        android:gravity="center_horizontal|center_vertical"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question_tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15+25"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@id/Start_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Start_btn"
+        android:layout_width="248dp"
+        android:layout_height="232dp"
+        android:text="Başla"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_tw"
+        />
+
+    <Button
+        android:id="@+id/answ1_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="208dp"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timer_tw"
+        android:textSize="35sp"
+        android:text="15"
+        android:textColor="@color/black"
+        android:backgroundTint="#9C27B0"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/answ2_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="208dp"
+        android:backgroundTint="#FF5722"
+        android:text="15"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/counter_tw"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/answ3_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#4CAF50"
+        android:text="15"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answ1_btn"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/answ4_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="15"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answ2_btn"
+        android:visibility="invisible"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
